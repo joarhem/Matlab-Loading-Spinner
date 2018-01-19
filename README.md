@@ -58,8 +58,7 @@ hdls.jObj.setBusyText('Hello Wurst');
 Please give me feedback if this spinner helps you. If there are erros (probably somewhere) of missing functions, tell me as well.
 
 ### Example
-[hdls] = StartLoadingSpinner('parent', parenthandle, 'backgroundcolor', [0 0 0], 'size', '32px', 'position', [500 10])
-% some extensive calculation...
+See Example file
 
 ### Special Thanks
 The code was inspired by Yair Altmans blog post on his website [Undocumented Matlab](https://undocumentedmatlab.com/blog/animated-busy-spinning-icon).
