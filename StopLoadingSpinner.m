@@ -27,6 +27,7 @@ end
 % stop spinner and...
     if isfield(In, 'successtext')
     %... show text
+        In.hdls.jObj.setPaintsWhenStopped(true);
         In.hdls.jObj.setBusyText(In.successtext);
     end
     if In.stopfreeze == true
