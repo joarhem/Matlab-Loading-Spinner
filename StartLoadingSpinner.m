@@ -68,6 +68,8 @@ switch In.dotcolor
         error('Wrong dotcolor option!');
 end
 
+
+
 % set position and parent
 if ~(strcmp('figure', get(In.parent, 'type')) || strcmp('uipanel', get(In.parent, 'type')) || strcmp('uitoolbar', get(In.parent, 'type')))
     error('Wrong type of parent handle');

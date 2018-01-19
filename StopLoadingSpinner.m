@@ -25,14 +25,14 @@ while i <= length(varargin)
 end
 
 % stop spinner and...
-if isfield(In, 'successtext') || In.stopfreeze == true
+    if isfield(In, 'successtext')
     %... show text
-    jObj.setPaintsWhenStopped(true);  % default = false
-    jObj.setBusyText(In.successtext);
+        In.hdls.jObj.setBusyText(In.successtext);
+    end
+    if In.stopfreeze == true
+    %... freeze it
+        In.hdls.jObj.setPaintsWhenStopped(true);
+    end
     In.hdls.jObj.stop;
-else
-    %...delete
-    delete(In.hdls.hdlContainer);
-end
 end
 
